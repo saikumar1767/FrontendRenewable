@@ -20,7 +20,7 @@ RUN npm install -g react-scripts
 
 RUN npm run build
 
-FROM nginx:stable-alpine
+FROM nginx
 
 # COPY --from=builder /app/nginx/nginx.conf /etc/nginx/conf.d/default.conf
 
